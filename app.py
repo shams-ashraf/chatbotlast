@@ -148,7 +148,6 @@ st.markdown("""
     <li>What are the requirements for registering the master's thesis?</li>
     <li>Tell me about the internship</li>
     <li>What are the thesis rules?</li>
-    <li>Compare exam types</li>
 </ul>
 
 <p style="text-align:center; font-size:1.1rem; margin-top:2rem;">Just type your question and get clear answers! 🚀</p>
