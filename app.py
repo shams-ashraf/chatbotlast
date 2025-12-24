@@ -119,36 +119,41 @@ if not st.session_state.chats:
 st.markdown("""
 <div class="main-card">
     <h1 style='text-align:center;margin:0;'>🧬 Biomedical Document Chatbot</h1>
-    <p style='text-align:center;margin-top:10px;'>Your quick helper for MBE studies at Hochschule Anhalt</p>
+    <p style='text-align:center;margin-top:10px;'>Your smart assistant for the Master Biomedical Engineering (MBE) program at Hochschule Anhalt</p>
 </div>
-<br><br>
+
+<div class="main-card">
+<h2 style="color:#00d9ff; text-align:center;">What does it do?</h2>
+
+<p style="font-size:1.1rem; text-align:center;">Ask any question about your Master's in Biomedical Engineering – it answers directly from the official documents only.</p>
+
+<h3 style="color:#00d9ff;">Features</h3>
+<ul style="font-size:1.05rem; line-height:1.8;">
+    <li>Chat naturally and ask follow-ups (e.g., "summarize that")</li>
+    <li>Works in English, German, and Arabic</li>
+    <li>Fast and accurate responses</li>
+    <li>Remembers conversation context</li>
+</ul>
+
+<h3 style="color:#00d9ff;">Documents it uses</h3>
+<ul style="font-size:1.05rem; line-height:1.8;">
+    <li>Study & Examination Regulations (SPO)</li>
+    <li>Module Handbook (June 2024)</li>
+    <li>Guide to Writing Scientific Papers</li>
+    <li>Final Thesis Guidelines</li>
+</ul>
+
+<h3 style="color:#00d9ff;">Try these</h3>
+<ul style="font-size:1.05rem; line-height:1.8;">
+    <li>What are the requirements for registering the master's thesis?</li>
+    <li>Tell me about the internship</li>
+    <li>What are the thesis rules?</li>
+    <li>Compare exam types</li>
+</ul>
+
+<p style="text-align:center; font-size:1.1rem; margin-top:2rem;">Just type your question and get clear answers! 🚀</p>
+</div>
 """, unsafe_allow_html=True)
-
-with st.expander("ℹ️ About this chatbot – click to expand", expanded=False):
-    st.markdown("""
-<h2>🎯 What does it do?</h2>
-Ask any question about your Master's in Biomedical Engineering – it answers directly from the official documents only.
-
-<h3>Features</h3>
-- Chat naturally and ask follow-ups (e.g., "summarize that")
-- Works in English, German, and Arabic
-- Fast and accurate responses
-- Remembers conversation context
-
-<h3>📋 Documents it uses</h3>
-- Study & Examination Regulations (SPO)
-- Module Handbook (June 2024)
-- Guide to Writing Scientific Papers
-- Final Thesis Guidelines
-
-<h3>💡 Try these</h3>
-- What are the requirements for registering the master's thesis?
-- Tell me about the internship
-- What are the thesis rules?
-- Compare exam types
-
-Just type your question and get clear answers! 🧬
-    """, unsafe_allow_html=True)
 with st.sidebar:
     st.markdown("# 🧬 BioMed Doc Chat")
 
