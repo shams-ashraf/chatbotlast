@@ -8,7 +8,7 @@ import pickle
 import hashlib
 
 PDF_PASSWORD = "mbe2025"
-DOCS_FOLDER = "/mount/src/lasst/documents"
+DOCS_FOLDER = "/mount/src/chatbotlast/documents"
 CACHE_FOLDER = os.getenv("CACHE_FOLDER", "./cache")
 
 os.makedirs(DOCS_FOLDER, exist_ok=True)
@@ -361,3 +361,4 @@ def get_files_from_folder():
     for ext in supported_extensions:
         files.extend(glob.glob(os.path.join(DOCS_FOLDER, ext)))
     return files
+
