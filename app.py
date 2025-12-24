@@ -115,22 +115,16 @@ if not st.session_state.chats:
         "context": []
     }
     st.session_state.active_chat = cid
-
-st.markdown("""
-<div class="main-card">
-    <h1 style='text-align:center;margin:0;'>🧬 Biomedical Document Chatbot</h1>
-    <p style='text-align:center;margin-top:10px;'>RAG Chatbot for Biomedical Engineering at Hochschule Anhalt</p>
-</div>
-""", unsafe_allow_html=True)
 st.markdown("""
 <div class="main-card">
     <h1 style='text-align:center;margin:0;'>🧬 Biomedical Document Chatbot</h1>
     <p style='text-align:center;margin-top:10px;'>Your quick helper for MBE studies at Hochschule Anhalt</p>
 </div>
+""", unsafe_allow_html=True)
 
-<div class="main-card">
+with st.expander("ℹ️ About this chatbot – click to expand", expanded=False):
+    st.markdown("""
 <h2>🎯 What does it do?</h2>
-
 Ask any question about your Master's in Biomedical Engineering – it answers directly from the official documents only.
 
 <h3>Features</h3>
@@ -151,12 +145,8 @@ Ask any question about your Master's in Biomedical Engineering – it answers di
 - What are the thesis rules?
 - Compare exam types
 
-Just type your question and get clear answers!
-
-Ready? Ask below 🧬
-</div>
-""", unsafe_allow_html=True)
-
+Just type your question and get clear answers! 🧬
+    """, unsafe_allow_html=True)
 with st.sidebar:
     st.markdown("# 🧬 BioMed Doc Chat")
 
