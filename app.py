@@ -115,11 +115,13 @@ if not st.session_state.chats:
         "context": []
     }
     st.session_state.active_chat = cid
+
 st.markdown("""
 <div class="main-card">
     <h1 style='text-align:center;margin:0;'>🧬 Biomedical Document Chatbot</h1>
     <p style='text-align:center;margin-top:10px;'>Your quick helper for MBE studies at Hochschule Anhalt</p>
 </div>
+<br><br>
 """, unsafe_allow_html=True)
 
 with st.expander("ℹ️ About this chatbot – click to expand", expanded=False):
