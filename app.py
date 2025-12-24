@@ -122,30 +122,38 @@ st.markdown("""
     <p style='text-align:center;margin-top:10px;'>RAG Chatbot for Biomedical Engineering at Hochschule Anhalt</p>
 </div>
 """, unsafe_allow_html=True)
-
 st.markdown("""
 <div class="main-card">
-<h2>ℹ️ About</h2>
+    <h1 style='text-align:center;margin:0;'>🧬 Biomedical Document Chatbot</h1>
+    <p style='text-align:center;margin-top:10px;'>Your quick helper for MBE studies at Hochschule Anhalt</p>
+</div>
 
-### 🎯 Features:
-- **Precise Citations**: Every answer includes file + page + table references
-- **Conversational**: Ask follow-up questions naturally
-- **Smart Context**: Understands references to previous answers
-- **Multi-language**: English, German, Arabic
-- **Fast**: Cached & persistent processing
-- **MBE-Specific**: Biomedical engineering regulations focused
+<div class="main-card">
+<h2>🎯 What does it do?</h2>
 
-### 📋 Supported Documents:
-- 📄 Study & Examination Regulations (SPO)
-- 📚 Module Handbook
-- 📝 Scientific Writing Guides
-- 📃 Bachelor/Master Thesis Notes
+Ask any question about your Master's in Biomedical Engineering – it answers directly from the official documents only.
 
-### 💡 Example Questions:
-- "How many modules in semester 1?"
-- "What are the thesis requirements?"
-- "Tell me about the internship" → then "summarize that"
-- "Compare exam types in SPO"
+<h3>Features</h3>
+- Chat naturally and ask follow-ups (e.g., "summarize that")
+- Works in English, German, and Arabic
+- Fast and accurate responses
+- Remembers conversation context
+
+<h3>📋 Documents it uses</h3>
+- Study & Examination Regulations (SPO)
+- Module Handbook (June 2024)
+- Guide to Writing Scientific Papers
+- Final Thesis Guidelines
+
+<h3>💡 Try these</h3>
+- What are the requirements for registering the master's thesis?
+- Tell me about the internship
+- What are the thesis rules?
+- Compare exam types
+
+Just type your question and get clear answers!
+
+Ready? Ask below 🧬
 </div>
 """, unsafe_allow_html=True)
 
