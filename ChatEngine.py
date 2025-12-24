@@ -38,23 +38,9 @@ def answer_question_with_groq(query, relevant_chunks, chat_history=None):
         return "❌ Please set GROQ_API_KEY in environment variables"
    
     context_parts = []
-    sources_list = []  
     for i, chunk_data in enumerate(relevant_chunks[:10], 1):
         content = chunk_data['content']
-        meta = chunk_data['metadata']
-        
-        source = meta.get('source', 'Unknown')
-        page = meta.get('page', 'N/A')
-        is_table = meta.get('is_table', 'False')
-        table_num = meta.get('table_number', 'N/A')
-        
-        citation = f"[Source {i}: {source}, Page {page}"
-        if is_table == 'True' or is_table == True:
-            citation += f", Table {table_num}"
-        citation += "]"
-        
         context_parts.append(content)
-        sources_list.append(citation)
     
     context = "\n\n---\n\n".join(context_parts)
     
@@ -84,7 +70,7 @@ CRITICAL RULES:
 4. If no relevant info in sources OR history: "No sufficient information in the available documents"
 5. Use the SAME language as the question (English/German/Arabic)
 6. Be CONCISE - short, direct answers unless asked to elaborate
-7. For counting questions: Count precisely and list all items with citations
+7. For counting questions: Count precisely and list all items
 8. Do NOT explain your thought process.
 9. Answer directly and clearly.
 
@@ -128,5 +114,6 @@ ANSWER:"""
         return answer_text
     except Exception as e:
         return f"❌ Error connecting to Groq: {str(e)}"
+
 
 
